@@ -1,37 +1,37 @@
 {
-	"productName": "tauri-app",
-	"version": "0.1.0",
-	"identifier": "com.tauri-app.app",
-	"build": {
-		"beforeDevCommand": "yarn dev",
-		"devUrl": "http://localhost:5999",
-		"beforeBuildCommand": "yarn build",
-		"frontendDist": "../dist"
-	},
-	"app": {
-		"windows": [
-			{
-				"title": "tauri-app",
-				"width": 800,
-				"height": 600,
-				"minWidth": 800,
-				"minHeight": 600,
-				"decorations": false
-			}
-		],
-		"security": {
-			"csp": null
-		}
-	},
-	"bundle": {
-		"active": true,
-		"targets": "all",
-		"icon": [
-			"icons/32x32.png",
-			"icons/128x128.png",
-			"icons/128x128@2x.png",
-			"icons/icon.icns",
-			"icons/icon.ico"
-		]
-	}
+  "productName": "umplayer",
+  "version": "0.1.0",
+  "identifier": "io.nesercode.umplayer",
+  "build": {
+    "beforeDevCommand": "pnpm run dev",
+    "devUrl": "http://localhost:5999",
+    "beforeBuildCommand": "pnpm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "UmPlayer",
+        "width": 800,
+        "height": 600,
+        "minWidth": 800,
+        "minHeight": 600,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
 }
