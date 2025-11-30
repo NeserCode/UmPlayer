@@ -85,6 +85,7 @@ const { isDark, toggle: toggleDark } = useDark();
         <SunIcon v-show="!isDark" />
         <MoonIcon v-show="isDark" />
       </span>
+      <span class="divider"></span>
       <span
         class="btn minimize"
         @mouseenter="addMoveClass"
@@ -147,14 +148,14 @@ const { isDark, toggle: toggleDark } = useDark();
   @apply w-10 p-0;
 }
 .pin .icon {
-  @apply w-5 p-1 transition-all
-	rounded scale-125;
+  @apply w-5 p-1
+	scale-125 transition-transform ease-in-out duration-200;
 }
 .pin.moving .icon {
   @apply rotate-[135deg];
 }
 
 .pin.pinned .icon {
-  @apply bg-slate-600 text-slate-100 rotate-[135deg] scale-100;
+  @apply text-green-500 rotate-[135deg];
 }
 </style>
